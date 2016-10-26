@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>target</title>
+    <style type="text/css">
+        :target:before{
+            content:url(flowerbul.gif)
+        }
+    </style>
+</head>
+<body>
+<h1>This is a heading</h1>
+<p><a href="#news1">Jump to new content 1</a></p>
+<p><a href="#news2">Jump to new content 2</a></p>
+
+<p>Click on the link above the :target selector will add an image in front of the current active HTML anchor</p>
+
+<p><a name="news1"></a><b>New content 1......</b>
+<p><a name="news2"></a><b>New content 2......</b></p>
+
+<p><b>Note:</b>Internet explorer is not supproted th :target selector.</p>
+</body>
+</html>

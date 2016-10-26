@@ -1,0 +1,45 @@
+ header
+{
+  text-align:center;
+}
+
+ ul, nav ul
+{
+  list-style-type:none;
+  display: block;
+}
+
+ ul li, nav ul li
+{
+  float:right;
+  margin:5px;
+  padding:5px;
+}
+ after, nav ul:after
+ {
+
+   display:block;
+   content:"";
+ }
+aside
+{
+  float:left;
+  width:10%;
+}
+ aside ul li
+ {
+   font-size:1.5em;
+   margin:5px;
+   padding:5px;
+ }
+ section
+ {
+   
+   display:block;
+   width:85%;
+ }
+
+ footer
+ {
+   text-align:center;
+ }

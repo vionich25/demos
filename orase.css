@@ -1,0 +1,19 @@
+table {
+    border-collapse: collapse;
+      width: 60%;
+}
+
+table, th, td {
+    border: 1px solid lightgrey;
+}
+
+th {
+	  height: 50px;
+}
+
+.abc th {
+ background-color:  #00ff00;
+    color: white;
+}
+
+.def td {background-color: #f2f2f2}

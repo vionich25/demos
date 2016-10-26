@@ -1,0 +1,39 @@
+body {
+	background-color: grey;
+	
+}
+
+#header {
+	color: white;
+	text-align: center;
+}
+
+ul li a  {
+	color: white;
+	text-decoration: none;
+    
+}
+
+ul {
+	list-style-type: none;
+}
+
+.second {
+	text-decoration: underline;
+}
+
+ .one a:hover {
+
+	  width: 60px;
+	 background-color: #dddddd;
+	 text-align: center;
+	 
+}
+
+h2 {
+	color:white;
+}
+
+#footer{
+	text-align: center;
+}

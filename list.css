@@ -1,0 +1,70 @@
+#content {
+	width: 70%;
+	border-style: groove color blue;
+
+
+}
+
+ul  {
+	border:solid blue;
+	border-style: double;
+
+	width: 70%;
+    list-style-type: none;
+    margin: 5px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-right: 10px;
+    padding-left: 10px;
+    overflow: hidden;
+    background-color:  #4d4dff;
+
+}
+
+li {
+    float: left;
+    border-right:1px solid black;
+    display: inline-block;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.a {
+	width: 15%;
+	height: 10%;
+	color:white;
+	border: 1px solid grey;
+	background: lightgrey;
+}
+
+.b {
+	width: 15%;
+	height: 10%;
+	color:white;
+	border: 1px solid grey;
+	background: lightgrey;
+}
+
+
+.one {
+	width: 20%;
+	height: 15%;
+	color:white;
+	border: 1px solid grey;
+	background: linear-gradient (blue, white);
+}
+
+.second {
+	width: 45%;
+	height: 35%;
+	color:white;
+	border: 1px solid grey;
+	background: lightgrey;
+
+}

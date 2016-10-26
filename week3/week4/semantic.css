@@ -1,0 +1,48 @@
+header, h1 {
+  text-align: center;
+}
+
+header ul li {
+  display: inline-block;
+
+}
+
+header ul li a {
+  text-decoration: none;
+
+
+}
+
+header  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+    float:left;
+  }
+
+
+ aside {
+   float: left;
+    width: 25%;
+
+ }
+section  {
+  float:right;
+  width: 75%;
+
+}
+
+.clearfix:before {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+
+
+ footer{
+   text-align: center;
+ }
