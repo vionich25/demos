@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>font-html</title>
+    <style>
+        @font-face {
+            font-family: SketchRockwell;
+            src:url(dahot.SketchRockwell-Bold.ttf);
+        }
+
+        h1 {
+            font-family: SketchRockwell;
+            font-size: :3.7em;
+            font-weight: normal;
+            text-shadow: 2px 5px 27px rgba(178, 0, 255, 0.78);
+        }
+
+        h2 {
+            font:normal 2.5em Consolas;
+        }
+
+        .box {
+            border: 1px solid black;
+            height: 100px;
+            width: 300px;
+            overflow: hidden;
+            white-space:nowrap;
+        }
+
+         .overflow-ellipsis {
+            text-overflow: ellipsis;
+             overflow: auto;
+
+        }
+
+        .overflow-clip {
+            text-overflow: clip;
+
+        }
+    </style>
+</head>
+<body>
+<h1>ITacad Softwhere Academy</h1>
+<h2>normal text</h2>
+<p class="box">lorem ipsum dolor sit amet, consectetur adipisicing elit. a at consectetur, delectus distinctio esse eum incidunt ipsam labore laborum nulla provident quasi quidem quis quo repellendus velit vero, vitae voluptatum?</p>
+ <h2>text-overflow:ellipsis</h2>
+<p class="box overflow-ellipsis">lorem ipsum dolor sit amet, consectetur adipisicing elit. cupiditate dolores exercitationem illo in ipsam, iure libero mollitia nam non recusandae repellendus sapiente similique soluta suscipit voluptatibus. magnam mollitia natus quae!</p>
+
+<h2>text-overflow:clip</h2>
+<p class="box overflow-clip">lorem ipsum dolor sit amet, consectetur adipisicing elit. doloremque ea illo inventore ipsam iure laboriosam nobis non nulla quasi reiciendis? amet doloremque eius facilis fuga minima quibusdam sunt suscipit voluptatum?</p>
+
+</body>
+</html>

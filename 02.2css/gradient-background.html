@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>gradient background</title>
+    <style>
+        p.gradient{
+            /*Firefox 3.6+*/
+            background: -moz-linear-gradient(100% 100% 90deg, #FFFF00, #0000FF);
+            /*Safari 4-5, Chrome 1-9 */
+            background: -webkit-gradient(linear, 0% 0% 0% 100%,from(#0000FF), to(#FFFF00));
+            /*Safari 5.1+, Chrome 10+ */
+            background: -webkit-linear-gradient(#FFFF00, #0000FF);
+            /*Opera 11.10+ */
+            background: -O-linear-gradient(#2F27277, #0000FF);
+        }
+    </style>
+</head>
+<body>
+<p class="gradient">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium doloremque illo provident quam soluta! Aliquam autem, ex incidunt neque obcaecati odit rerum. Ducimus laboriosam minima quibusdam! Aliquid deserunt eum maiores?
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat iusto nemo obcaecati veniam voluptate? Amet assumenda dolorem dolores earum error id, iusto placeat, provident quo quod quos rem unde, voluptatibus?
+</p>
+
+</body>
+</html>
