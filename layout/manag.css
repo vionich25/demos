@@ -1,0 +1,82 @@
+* {
+padding: 0;
+margin: 0;
+}
+
+section {
+width: 665px;
+height: 300px;
+background-color: #3a3a3a;
+margin: 1.5em 5%;
+border-radius: 5px;
+}
+
+header {
+height: 70px;
+background-image: url(https://cdn.images.reevoo.com/products/3701/3701626/4147a352f5edecbf4063c91336c8d9dc82fe4f09/30x30.jpg);
+background-repeat: no-repeat;
+background-position:  10px  10px;;
+box-shadow: inset 0 0 10px 0 #272727;
+border-radius: 5px;
+}
+
+form {
+width: 590px;
+height: 30px;
+color: #fff;
+font-family:   Georgia, "Times New Roman", serif;
+font-size: 20px;
+font-weight: bold;
+float: right;
+margin-top: 20px;
+margin-right: 10px;
+}
+
+form input[type="text"] , form input[type="email"] {
+height: 20px;
+margin-right: 15px;
+border-radius: 1px;
+padding-left: 5px;
+}
+
+form input[type="submit"] {
+background: url("https://cdn.empowernetwork.com/user_images/post/2014/09/25/4/c0/c44b/540x293_20140925_4c0c44b8124f6be66709b21bf8a2b497_png.png")  no-repeat;
+width: 68px;
+height: 28px;
+float: right;
+color: #fff;
+border: none;
+margin-right: 10px;
+}
+
+article {
+width: 640px;
+padding: 10px 10px 15px 10px;
+}
+
+h2 {
+color: #fad719;
+font-family: "Times New Roman", serif;
+font-size: 30px;
+font-weight: normal;
+margin-bottom: 10px;
+}
+
+article span {
+color: #fff;
+}
+
+p {
+color: #a5a5a5;
+font-size: 13px;
+font-family: Verdana, Helvetica, sans serif;
+line-height: 20px;
+}
+
+
+
+
+
+
+
+
