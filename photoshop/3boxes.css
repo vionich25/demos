@@ -1,0 +1,73 @@
+#container {
+    width:  1200px;
+    margin: 0 auto;
+}
+
+header {
+margin-top: 60px;
+    height: 126px;
+}
+
+header div#logo{
+
+    width: 231px;
+    height: 28px;
+    float: left;
+
+
+}
+header div#nav{
+     width: 252px;
+     height: 28px;
+     float: right;
+ }
+
+header div#nav .elem{
+    width: 70px;
+    height: 28px;
+    float: right;
+    margin-left: 14px;
+}
+
+
+
+#first{
+    width: 1200px;
+    height: 550px;
+
+    margin-bottom: 20px;
+}
+#first img {
+    width: 1200px;
+    height: 550px;
+}
+
+
+#second{
+    width: 590px;
+    height: 410px;
+    background-color: black;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 65px;
+
+
+}
+
+#second img{
+    width: 590px;
+    height: 410px;
+}
+ #third img {
+     width:590px;
+     height: 410px;
+ }
+#third{
+    width: 590px;
+    height: 410px;
+    background-color: black;
+    float: left;
+    margin-bottom: 65px;
+
+}
+

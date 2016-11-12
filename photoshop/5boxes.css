@@ -1,0 +1,68 @@
+
+
+
+
+#container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+header{
+    margin-top: 40px;
+    height: 161px;
+    margin-bottom: -50px;
+}
+
+header div #logo {
+    width: 245px;
+    height: 52px;
+
+
+}
+ header div#nav{
+     width: 273px;
+     height: 52px;
+     float: right;
+ }
+
+ header div#nav.elem{
+     width: 122px;
+     height: 52px;
+     float:right;
+     margin-left: 14px;
+
+ }
+
+
+ #content img{
+     width: 1100px;
+     height: 686px;
+     margin-bottom: 20px;
+ }
+
+ #box1{
+     width: 273px;
+     height: 206px;
+     float: left;
+
+ }
+#box2{
+    width: 273px;
+    height: 206px;
+    float: left;
+
+}
+#box3 {
+    width: 200px;
+    height: 206px;
+    float: right;
+}
+
+#box4{
+    width: 200px;
+    height: 206px;
+    float: right;
+
+}
+
+
