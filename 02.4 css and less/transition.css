@@ -1,0 +1,26 @@
+/*Mixin*/
+/*Implementation */
+#somediv {
+  -webkit-transition: all 0.5s ease-in;
+  -mox-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
+  -ms-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+  width: 300px;
+  height: 200px;
+}
+#somediv:hover {
+  opacity: 0.7;
+}
+#otherdiv {
+  -webkit-transition: all 0.5s ease-in;
+  -mox-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
+  -ms-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+  width: 300px;
+  height: 200px;
+}
+#otherdiv:hover {
+  opacity: 0.8;
+}
