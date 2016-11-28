@@ -1,0 +1,11 @@
+$link-color: ffffff;
+$v-link-color: #990003;
+
+body{
+  a{
+    color: $link-color;
+    &:visited {
+      color: $v-link-color;
+    }
+  }
+}

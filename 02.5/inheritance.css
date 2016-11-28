@@ -1,0 +1,17 @@
+.clearfix, body ul {
+  zoom: 1; }
+  .clearfix:after, body ul:after {
+    display: block;
+    height: 0;
+    content: "";
+    clear: both; }
+
+body ul li {
+  float: left;
+  margin-left: 15px;
+  background-color:#8388;
+  list-style-type: none; }
+  body ul li:nth-last-of-type(2n) {
+    background-color: #00ee00; }
+
+/*# sourceMappingURL=inheritance.css.map */
