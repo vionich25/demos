@@ -1,0 +1,54 @@
+/*form*/
+
+form {
+    width: 464px;
+    overflow: hidden;
+}
+
+label {
+    display: block;
+    font-size: 11px;
+    color:#645a56;
+    text-transform: uppercase;
+}
+
+input[type=text], input[type=email], input[type=url], input[type=number], input[type=file], input[type=date], input[type=checkbox], select, textarea{
+    width: 452px;
+    height: 27px;
+    border:1px solid #c3c5bf;
+    color:#654a56;
+    font-size: 17px;
+    padding: 7px 0 0 10px;
+    margin-bottom: 14px;
+    font-family: Helvetica, Arial;
+}
+
+input[type=text]:hover, input[type=date]:hover, input[type=email]:hover, input[type=url]:hover, input[type=number]:hover, input[type=radio]:hover, input[type=file]:hover, select, textarea:focus, input:focus {
+    background: none;
+    outline: none;
+
+}
+
+textarea {
+    height: 212px;
+}
+
+input[type=submit] {
+    background: #d5ceca ;
+    width: 102px;
+    height: 34px;
+    padding: 8px;
+    text-align: center;
+    font-size: 11px;
+    text-transform: uppercase;
+    float: right;
+    cursor: pointer;
+    border: none;
+    margin-top: 15px;
+    color:#30241f;
+    line-height: 20px;
+}
+
+input[type=submit]:hover {
+    background: #bcb4ae;
+}

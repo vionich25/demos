@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>functions</title>
+    <link rel="stylesheet" href="cssfounctions.css">
+</head>
+<body>
+<form id="myform" name="theform" action="data.php" method="POST">
+    <span id="namehint" class="hint"></span>
+    <label for="name">Name:</label>
+    <input type="text" name="name" required placeholder="Last, First" maxlength="20" value="" id="name"/>
+
+    <label for="email">Email:</label>
+    <input type="email" name="email" multiple value="" id="email"/>
+    <label for="age">Age:</label>
+    <input type="number" name="age" min="13" max="60" value="" id="age"/>
+    <label for="country">Country:</label>
+    <input type="text" name="country" value="" id="country" list="countries" pattern="[A-Za-z]+"/>
+    <datalist id="countries">
+        <option value="Romania">
+        <option value="Bulgaria">
+        <option value="Hungary">
+        <option value="Austria">
+    </datalist>
+    <label for="zipcode">Zip Code:</label>
+    <input type="text" name="zipcode" pattern="[0-9]{6}" value="" id="zipcode"/>
+    <label for="phone">Phone:</label>
+    <input type="text" name="phone" pattern="\d{4}\-\d{6}" value="" id="phone"/>
+    <span id="formerror" class="error"></span>
+    <label for-="website">Website:</label>
+    <input type="url" name="website" value="" id="website"/>
+
+    <label for="image">Your Photo:</label>
+    <input type="file" name="image" multiple accept="image/png, video/*" id="image"/>
+
+    <label for="date">Date:</label>
+    <input type="date" name="date" min="2014-05-03" max="2016-05-29" value="" id="date"/>
+
+    <label for="reference">Where did you hear about us?</label>
+    <select name="reference" id="reference">
+        <option>Choose...</option>
+        <option value="http://uaic.ro">A friend</option>
+        <option value="http://facebook.ro">Facebook</option>
+        <option value="http://twitter.ro">Twitter</option>
+    </select>
+    <label for="subscribe">Subscribe to our mailing list?</label>
+    <input type="checkbox" id="subscribe" name="subscribe" CHECKED value="yes"/>
+    <label for="requesttype">Request Type:</label>
+    <input type="radio" name="requesttype" value="question" id="questionitem"/>Question
+    <input  type="radio" name="requesttype" value="comment" id="commentitem"/>Comment
+
+    <label for="message">Message:</label>
+    <textarea name="message" id="message" rows="20" cols="452"></textarea>
+    <input type="submit" name="submit" value="submit"/>
+</form>
+</body>
+</html>
