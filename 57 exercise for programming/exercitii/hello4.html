@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        var name = document.getElementById("name").value;
+        var div = document.createElement("div");
+        var textNode = document.createTextNode(greeting);
+
+
+        function hello() {
+            var name = document.getElementById("name").value;
+            var div = document.createElement("div");
+            var textNode = document.createTextNode(greeting);
+            div.appendChild(textNode);
+            document.body.appendChild(div);
+        }
+
+
+        function check() {
+            var name = document.getElementById("name").value;
+            if(name.length<=3){
+                greeting = "Hello, " + name + ", nice to meet you...you have a short name";
+                hello();
+            }
+            else if(name.length>=4 & name.length<8){
+
+                greeting = "Hello, " + name + ", nice to meet you...medium name";
+                hello();
+            }
+            else if(name.length>=8){
+                greeting = "Hello, " + name + ", nice to meet you...long name";
+                hello();
+            }
+        }
+    </script>
+</head>
+<body>
+<form>
+    <input type="text" id="name" name="name"/>
+    <input type="button" value="SayHello" onclick="check()"/>
+</form>
+</body>
+</html>
