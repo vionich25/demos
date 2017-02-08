@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task 9: Paint Calculator</title>
+    <script type="text/javascript">
+
+        var feetsPerGallon = 350;
+        document.addEventListener("DOMContentLoaded", function(event) {
+
+            var length = parseFloat(prompt("What is the length of your ceiling?"));
+            var width = parseFloat(prompt("What is the width of your ceiling?"));
+            var squareFeet = length * width;
+            var result = "" ;
+
+            if (isNaN(squareFeet)) {
+                result = "paint already.";
+            }
+            else {
+                result = "How many square feet do you have to paint?: "+squareFeet+"<br>";
+                var gallons = Math.ceil(squareFeet/feetsPerGallon);
+                result += "You will need to purchase "+gallons+" gallons of paint to cover "+squareFeet+" square feet." ;
+            }
+            var resDiv = document.getElementById('res');
+            resDiv.innerHTML = result;
+            console.log(result)
+
+
+        });
+
+    </script>
+
+</head>
+
+<body>
+<div id="res"></div>
+</body>
+</html>

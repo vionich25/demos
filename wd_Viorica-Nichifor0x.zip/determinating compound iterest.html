@@ -1,0 +1,34 @@
+<html>
+<head>
+    <title>Task12 Computing Simple Interest</title>
+
+    <script>
+        function calculate()
+        {
+            p = document.getElementById("p").value;
+            n = document.getElementById("n").value;
+            r = document.getElementById("r").value;
+            t = document.getElementById('t').value;
+            result = document.getElementById("result");
+            var base = 1 + (r/100/n);
+            var exp = n*t;
+            var calcul = p * Math.pow( base, exp);
+            calcul = (calcul).toFixed(2);
+            result.innerHTML = "After "+n+" years at "+r+" the investiment will worth. The interest is " +calcul;
+        }
+    </script>
+</head>
+
+<body>
+<h1>Simple Interest Calculation</h1>
+
+Enter the principal: <input id="p" type="text"><br/>
+Enter the rate of interest: <input id="r" type="text"><br/>
+Enter the number of years invested: <input id="t" type="text"><br/>
+Enter the number of times the interest is compounded per year: <input id="n" type="text"><br/>
+
+<button onclick="calculate()">Calculate</button>
+
+<p id="result"></p>
+</body>
+</html>

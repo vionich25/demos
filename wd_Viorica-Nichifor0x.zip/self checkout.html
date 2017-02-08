@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript" >
+        function getAmounts(){
+            var item1Price = document.getElementById("item1Price").value;
+            var item1Quantity = document.getElementById("item1Quantity").value;
+            var item2Price = document.getElementById("item2Price").value;
+            var item2Quantity = document.getElementById("item2Quantity").value;
+            var item3Price = document.getElementById("item3Price").value;
+            var item3Quantity = document.getElementById("item3Quantity").value;
+            calculateCosts(item1Price, item1Quantity, item2Price, item2Quantity, item3Price, item3Quantity);
+        }
+
+        function calculateCosts(item1Price, item1Quantity, item2Price, item2Quantity, item3Price, item3Quantity){
+            var item1TotalPrice = item1Price * item1Quantity;
+            var item2TotalPrice = item2Price * item2Quantity;
+            var item3TotalPrice = item3Price * item3Quantity;
+            var subtotal = item1TotalPrice + item2TotalPrice + item3TotalPrice;
+            var taxRate = 0.055;
+            var tax = subtotal * taxRate;
+            var total = subtotal + tax;
+            displayTotals(subtotal, tax, total)
+        }
+
+        function displayTotals(subtotal, tax, total){
+            document.getElementById("subtotal").innerHTML = "Subtotal: £" + subtotal;
+            document.getElementById("tax").innerHTML = "Tax: £" + tax;
+            document.getElementById("total").innerHTML = "Total: £" + total;
+        }
+
+    </script>
+    <title>Task 10: Self-Checkout</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+
+<h2> Task 10: Self-Checkout </h2>
+
+<form onsubmit="return false">
+    Enter the price of item 1:
+    £<input type="number" value="" id="item1Price">
+    <br>
+    Enter the quantity of item 1:
+    <input type="number" value="" id="item1Quantity">
+    <br><br>
+    Enter the price of item 2:
+    £<input type="number" value="" id="item2Price">
+    <br>
+    Enter the quantity of item 2:
+    <input type="number" value="" id="item2Quantity">
+    <br><br>
+    Enter the price of item 3:
+    £<input type="number" value="" id="item3Price">
+    <br>
+    Enter the quantity of item 3:
+    <input type="number" value="" id="item3Quantity">
+    <br><br>
+    <input type="button" value="Enter" onClick="getAmounts()">
+</form>
+
+<p id="subtotal"></p>
+<p id="tax"></p>
+<p id="total"></p>
+
+</body>
+
+</html>
