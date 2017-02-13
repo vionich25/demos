@@ -1,0 +1,56 @@
+#wrapper, #main .top, #main .middle, #main .bottom {
+    width:580px;
+}
+
+.background {
+    width: 580px;
+}
+
+.background .center {
+    width: 570px;
+}
+.content {
+    width: 540px;
+}
+.sidebar {
+    width: 100%;
+}
+a.twitter {
+    right: 0;
+}
+#header ul {
+    font-size: 10px;
+}
+.breadcrumb, .search .buttonContainer .sidebar .section:first-child {
+    display: none;
+}
+.search > span {
+    float: right;
+    position: relative;
+    left: 5px;
+}
+
+.search select {
+    width: 105px;
+    margin-right: 2px;
+    font-size: 11px;
+}
+
+.intro img {
+    width: 215px;
+}
+.sidebar input[name="email"], .sidebar input[name="name"],
+.sidebar .btnMiddle { width: 162px;}
+
+.sidebar .inputHolder {
+    float:left;
+}
+.sidebar .inputHolder + .inputHolder {
+    margin-top: 0px;
+    margin-left: 5px;
+}
+.sidebar .signTable {
+    float: left;
+    margin-top: -5px;
+
+}

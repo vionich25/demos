@@ -1,0 +1,574 @@
+/* reset --> */
+
+html, body, div, span, 
+h1, h2, h3, p, em, img, strong, b, i, ul, li, form {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+input, select { 
+	vertical-align: middle;
+}
+
+html { 
+	overflow-y: scroll; 
+}
+a:hover, a:active { 
+	outline: none; 
+}
+ul { 
+	margin-left: 2em; 
+}
+ul, li { 
+	margin: 0; list-style:none; list-style-image: none; 
+}
+
+label, input[type="button"], input[type="submit"], input[type="image"], button { 
+	cursor: pointer; 
+}
+button, input, select, textarea { 
+	margin: 0; 
+}
+body, select, input {  
+	color: #444; 
+}
+
+/* <-- reset */
+
+/* custom styles --> */
+
+body, select, input, button { font-family: arial;}
+select, input, button { font-size: 99%; }
+
+body {
+	background-color: #ece7da;
+	background: url(../images/bckg.png) repeat;
+	font-size: 12px;
+}
+
+a { text-decoration: none}
+
+label {
+	/* labels for screenreaders only */
+	position:absolute !important;    
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px); 
+}
+
+#wrapper {
+	width: 990px;
+	position: relative;
+	margin: 10px auto 0 auto;
+}
+
+/* top header styles --> */
+
+.company, .company img, .company div {
+	float: left;
+}
+
+.contacts {
+	float: right;
+}
+
+.company {
+	width: 60%;
+	color: #8a8a8a;
+}
+
+.company h1 {
+	margin-top: 15px; margin-left: -5px;
+	font: 34px "Myriad Pro", arial;
+}
+
+.company h2 {
+	font: bold 12px "Myriad Pro", arial;
+}
+
+.contacts p {
+	font-size: 11px;
+}
+
+.contacts p.phone {
+	font-size: 18px;
+}
+
+/* <-- top header styles */
+
+.nav {
+	position: relative;
+	margin-top: 10px;
+	height: 34px;
+}
+
+.background {
+	position: relative;
+	width: 988px;
+	height: 34px;
+	clear: left;
+	z-index: 0;
+}
+
+.background .left, .background .center, .background .right {
+	height: 34px;
+	float: left; 
+	background: url(../images/bckg-menu.png);
+}
+.background .left {
+	width: 5px;
+	background-position: 0 0;
+}
+
+.background .center {
+	width: 978px;
+	background-position: 0 -34px;
+}
+
+.background .right { 
+	width: 5px;
+	background-position: 0 -68px;
+}
+
+
+#header ul {
+	position: absolute;
+	z-index: 1;
+	top: 0px;
+	height: 34px;	
+}
+	
+#header ul li {
+	float: left;
+}
+
+#header ul li a{
+	height: 34px;
+	line-height: 34px;
+	padding: 10px;
+	font-weight: bold;
+	font-family: verdana;
+	color: #fff;
+	text-decoration: none;
+}
+
+#header ul li a:hover{
+	text-decoration: underline;
+}
+
+a.twitter {
+	position: absolute;
+	top: -52px;
+	right: -25px;
+	font-weight: bold;
+	color: #9c9a94;
+	text-decoration: none;
+}
+
+a.twitter img {
+	position: relative;
+	top: 17px;
+}
+
+.breadcrumb {
+	height: 32px;
+	line-height: 32px;
+	padding-left: 10px;
+	background: url(../images/sep-lines.gif) bottom repeat-x;
+}
+
+.breadcrumb a {
+	color: #666;
+	text-decoration: none;
+}
+
+.breadcrumb a:hover {
+	text-decoration: underline;
+	color: #0e7b27;
+}
+
+.breadcrumb a.bullet {
+	padding-left: 12px;
+	background: url(../images/sep-arrow.gif) left center no-repeat;
+	margin-left: 7px;
+}
+
+.search {
+	height: 40px;
+	line-height: 40px;
+	display: table-cell;
+}
+
+.ie7 .search {
+	margin-top: 10px;
+	margin-bottom: -5px;
+}
+
+.search img {
+	width: 24px; height: 24px;
+	margin-right: 5px;
+	vertical-align: middle;
+	cursor: pointer;
+}
+	
+.search select {
+	width: 145px; height: 20px;
+	margin-right: 15px;
+}
+
+.ie7 .search select {
+	width: 140px;
+}
+
+.buttonContainer {
+	position: relative;
+	top: 10px;
+	
+	clear: both;
+	display: inline-block;
+}
+
+.ie7 .buttonContainer {
+	float: right;
+	position: relative;
+	margin-top: -35px;
+}
+
+.buttonContainer span, .buttonContainer input {
+	float: left;
+}
+
+.search input {
+	height: 26px;
+	border: 0;
+	color: #fff;
+	background: url(../images/bckg-btn-search.png) 0 -26px repeat-x;
+}
+
+.search input[type=text] {
+	border: 1px solid #cfcdc5;
+	background: #fff;
+	height: 22px;
+	padding-left: 5px;
+	border-radius: 5px;
+}
+
+.search .left {
+	width: 5px; height: 26px;
+	background: url(../images/bckg-btn-search.png) 0 0 no-repeat;
+}
+
+.search .right {
+	display: inline-block;
+	width: 5px; height: 26px;
+	background: url(../images/bckg-btn-search.png) 0 -52px no-repeat;
+}
+
+/* <-- header */
+
+
+/* main --> */
+
+#main .top{
+	height: 4px; width: 990px;
+	background: url(../images/bckg-main-top.png) 0 0 no-repeat;
+}
+
+#main .middle {
+	width: 990px;
+	background: url(../images/bckg-main.png) -990px 0 repeat-y;
+}
+
+#main .bottom {
+	height: 4px; width: 990px;
+	background: url(../images/bckg-main.png) -1980px 0 no-repeat;
+}
+
+#main .middle .content, #main .middle .sidebar {
+	float: left;
+}
+
+#main .middle {
+	clear: left;
+	overflow: hidden;
+}
+
+.content {
+	width: 700px;
+	padding: 10px 19px 19px 19px;
+	clear: left;
+}
+
+.sidebar {
+	margin-left: 2px;
+	width: 249px;
+}
+
+/* content --> */
+
+.intro {
+	min-height: 130px;
+	border-bottom: 1px dotted #555;
+	
+}
+
+.intro img {
+	width: 215px; height: 119px;
+	float: right;
+}
+
+.intro h1{
+	font-weight: normal;
+	margin-bottom: 15px;
+	
+}
+
+.intro h2 {
+	font-weight: normal;
+	margin: 10px 0;
+	
+}
+
+.article {
+	width: 340px;
+	float: left;
+	margin-top: 20px;
+}
+
+.article.first {
+	margin-right: 20px;
+}
+
+.article .figure {
+	width: 332px; height: 156px;
+	border: 4px solid #e9e6df;
+	background-color: #e9e6df;
+	
+   -moz-border-radius: 4px;
+-webkit-border-radius: 4px;
+		border-radius: 4px;
+}
+
+.article img {
+	width: 332px; height: 156px;
+	
+   -moz-border-radius: 4px;
+-webkit-border-radius: 4px;
+		border-radius: 4px;
+}
+
+.article h2 {
+	margin-top: 15px; margin-bottom: 10px;
+}
+
+.content p {
+	margin-bottom: 25px;
+}
+
+.content .btnLeft, .content .btnMiddle, .content .btnRight,
+.sidebar .btnLeft, .sidebar .btnMiddle, .sidebar .btnRight /* sidebar styles */ {
+	float: left;
+	height: 32px;
+	line-height: 32px;
+}
+
+.content .btnMiddle {
+	padding-right: 10px;
+	background: url(../images/bckg-btn-more.png) 0 -32px repeat-x;
+	
+	color: #fff;
+	font-size: 90%;
+	font-weight: bold;
+
+}
+
+.content .btnLeft {
+	width: 17px;
+	background: url(../images/bckg-btn-more.png) 0 0 no-repeat;
+}
+
+.content .btnRight {
+	width: 17px;
+	background: url(../images/bckg-btn-more.png) 0 -64px no-repeat;
+}
+
+.content .more div:hover {
+	text-decoration: underline;
+}
+
+/* <-- content */
+
+/* sidebar --> */
+
+.sidebar h3 {
+	margin-bottom: 10px;
+}
+
+.sidebar ul li:before {
+	content: url(../images/bullet-circle.png);
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.sidebar ul li {
+	margin-bottom: 5px;
+}
+
+.sidebar ul li a{
+	color: #555;
+}
+
+.sidebar ul li a:hover {
+	text-decoration: underline;
+}
+
+.sidebar .section {
+	padding: 10px 20px;
+	background: url(../images/sep-lines.gif) left bottom repeat-x;
+	overflow: hidden;
+}
+
+form.signup {
+	margin-top: 15px;
+}
+
+.sidebar .inputHolder input {
+	border: 1px solid #cfcdc5;
+	height: 22px;
+	line-height: 22px;
+	padding-left: 5px;
+	
+   -moz-border-radius: 4px;
+-webkit-border-radius: 4px;
+		border-radius: 4px;
+}
+
+.sidebar input[name="email"] {
+	width: 195px;
+}
+
+.sidebar .inputHolder + .inputHolder {
+	margin-top: 5px;
+	margin-right: 5px;
+	float: left;
+}
+
+.sidebar input[name="name"] {
+	width: 115px;
+}
+
+.signTable {
+	border: 0;
+	border-spacing: 0;
+	border-collapse:collapse;
+	position: relative; top: 5px;
+}
+
+.signTable td, .signTable tr {
+	padding: 0; margin: 0;
+	
+}
+
+.sidebar .btnMiddle {
+	border: 0;
+	background: url(../images/bckg-btn-sign.png) 0 -32px repeat-x;
+	
+	color: #fff;
+	font-size: 90%;
+	font-weight: bold;
+
+}
+
+.sidebar .btnLeft {
+	width: 8px;
+	background: url(../images/bckg-btn-sign.png) 0 0 no-repeat;
+}
+
+.sidebar .btnRight {
+	width: 8px;
+	background: url(../images/bckg-btn-sign.png) 0 -64px no-repeat;
+}
+
+.sidebar .inputHolder {
+	display: inline-block;
+	border: 3px solid #e0ddd5;
+	background-color: #e0ddd5;
+	
+   -moz-border-radius: 4px;
+-webkit-border-radius: 4px;
+		border-radius: 4px;
+}
+
+/* <-- sidebar */
+
+
+/* <-- main */
+
+/* footer --> */
+
+#footer {
+	margin-top: 10px;
+	padding-top: 10px;
+	border-top: 1px dotted #555;
+	clear: both;
+}
+
+#footer ul {
+	float: left;
+}
+
+#footer p {
+	float: right;
+}
+
+#footer ul li {
+	float: left;
+	height: 15px; line-height: 15px;
+	margin-right: 5px;
+}
+
+#footer ul li + li:before { /* can be done with padding-left and placing the separator in this padded (?) place for wider support */
+	width: 2px; height: 15px;
+	margin-right: 5px;
+	position: relative; top: 2px;
+	content: url(../images/sep-dotted-vertical.png);
+}
+
+#footer ul li + li {
+	margin-top: -3px;
+}
+
+#footer ul li a {
+	color: #666;
+}
+
+#footer ul li a:hover {
+	text-decoration: underline;
+	color: #0e7b27;
+}
+
+#footer p a {
+	color: #0e7b27;
+	text-decoration: underline;
+}
+
+#footer p a:hover {
+	text-decoration: none;
+}
+
+/* <-- footer */
+
+/* moving twitter link and image to prevent displaying the horizontal scrollbar at 1024px resolution */
+
+@media screen and (min-width: 1024px) and (max-width: 1070px) {
+	a.twitter {
+		right: 0;
+	}
+}
+
+/* <-- custom styles */
+
+.clearfix:before, .clearfix:after { content: "\0020"; display: block; height: 0; overflow: hidden; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
